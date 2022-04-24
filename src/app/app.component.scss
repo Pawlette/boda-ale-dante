@@ -1,0 +1,62 @@
+.container {
+    background-color:#EAEBE6;
+}
+
+main {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    text-align: center; 
+}
+
+.lisianthus {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+
+    height: 100vh;
+    background-image: url(../assets/white-lisianthus.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.silk {
+    height: 100vh;
+    background-image: url(../assets/silk.jpeg);
+    background-size: cover;
+}
+
+.reserva-header {
+    height: 110px;
+    margin-top: .5rem;
+
+    background-image: url(../assets/reserva-fecha-green.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.namesWrapper {
+    background-color: rgba(127, 132, 71, .75);
+    height: 25%;
+}
+
+.image {
+    height: 100%;
+    background-image: url(../assets/ale-y-dante.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 576px) {
+    .reserva-header {
+        background-image: url(../assets/reserva-fecha-green.png);
+        height: 90px;
+    }
+
+    .namesWrapper {
+        height: 11vh;
+    }
+  }

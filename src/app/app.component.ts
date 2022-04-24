@@ -8,6 +8,7 @@ import { environment } from '../environments/environment';
 })
 export class AppComponent {
   title = 'my-first-project';
+  image = '../assets/white-lisianthus.jpeg';
     constructor() {
       console.log(environment.production); // Logs false for default environment
     }
