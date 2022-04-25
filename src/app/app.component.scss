@@ -2,6 +2,7 @@
 
 .container {
     background-color:#EAEBE6;
+    color: #1B1E09;
 }
 
 main {
@@ -19,7 +20,6 @@ main {
     height: 80vh;
     background-image: url(../assets/white-lisianthus.jpeg);
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -34,6 +34,20 @@ main {
     justify-content: space-between;
 }
 
+.main-header {
+    height: 40%;
+    .invita-txt {
+        color: #5B4B53;
+        font-size: 1.2rem;
+        background-color: rgba(230, 229, 217, .4);
+        padding: .7rem;
+    }
+}
+
+.main-names {
+    flex: 1;
+}
+
 .reserva-header {
     height: 12%;
     margin-top: .5rem;
@@ -45,8 +59,8 @@ main {
 }
 
 .namesWrapper {
-    background-color: rgba(217, 212, 178, .75);
-    height: 30%;
+    background-color:rgba(217, 212, 178, .8);
+    height: 35%;
 }
 
 .datesWrapper {
@@ -61,7 +75,7 @@ main {
 
 .image {
     height: 100%;
-    background-image: url(../assets/ale-y-dante.png);
+    background-image: url(../assets/ale-dante-green.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -95,7 +109,21 @@ span {
     height: 100%;
 }
 
+.box {
+    height: 45%;
+    background-color: rgba(230, 229, 217, .4);
+}
+
+.box img {
+    height: 100%;
+    object-fit: cover;
+}
+
 @media (max-width: 900px) {
+    .lisianthus {
+        background-position: top;
+    }
+
     .silk {
         height: auto;
     }
@@ -118,5 +146,15 @@ span {
 
     .bg-svg {
         background-size: contain;
+    }
+
+    .box {
+        height: 35%;
+    }
+
+    .main-header {
+        .invita-txt {
+            font-size: 1rem;
+        }
     }
   }
