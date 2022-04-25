@@ -12,8 +12,20 @@
         </div>
     </div>
     <div class="container silk">
-        <div>
+        <div class="header-poema">
             <div class="bg-svg"></div>
+        </div>
+        <div class="container-details">
+            <app-details [source]="'../../assets/convento_noche.jpeg'"
+                         [title]="'CEREMONIA'"
+                         [location]="'Convento Franciscano de San Luis Obispo'"
+                         [address]="'Parque Juárez 6-11, Centro, Huamantla Tlaxcala'"
+                         [link]="'https://goo.gl/maps/d52Eu7hHmZrDUzzq8'"></app-details>
+            <app-details [source]="'../../assets/fachada_uno.jpeg'"
+                         [title]="'RECEPCION'"
+                         [location]="'Hacienda Soltepec'"
+                         [address]="'Huamantla - Puebla Km. 3, 90505 Ignacio Zaragoza, Tlaxcala'"
+                         [link]="'https://g.page/HaciendaSoltepec?share'"></app-details>
         </div>
     </div>
  </main>

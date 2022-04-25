@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router'
 
 import { AppComponent } from './app.component';
+import { DetailsComponent } from './details/details.component';
 
 const routes: Routes = [
   { path: 'home', component: AppComponent },
@@ -11,7 +12,8 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes) 
