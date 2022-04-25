@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
 .container {
     background-color:#EAEBE6;
 }
@@ -24,11 +26,16 @@ main {
 .silk {
     height: 100vh;
     background-image: url(../assets/silk.jpeg);
+    background-position: center;
     background-size: cover;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
 }
 
 .reserva-header {
-    height: 110px;
+    height: 12%;
     margin-top: .5rem;
 
     background-image: url(../assets/reserva-fecha-green.png);
@@ -38,8 +45,18 @@ main {
 }
 
 .namesWrapper {
-    background-color: rgba(127, 132, 71, .75);
+    background-color: rgba(217, 212, 178, .75);
     height: 25%;
+}
+
+.datesWrapper {
+    background-color: rgba(127, 132, 71, 1);
+    height: 15%;
+
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
 }
 
 .image {
@@ -50,13 +67,43 @@ main {
     background-position: center;
 }
 
-@media (max-width: 576px) {
-    .reserva-header {
-        background-image: url(../assets/reserva-fecha-green.png);
-        height: 90px;
+span {
+    margin: 1rem;
+    color: #1B1E09;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+}
+
+.bg-svg {
+    width: 100%;
+    background-image: url(../assets/poema-header.svg);
+    background-repeat: no-repeat;
+    padding-bottom: 15%;
+    background-position: center;
+}
+
+@media (max-width: 900px) {
+    .lisianthus {
+        background-position: right;
+    }
+    
+    .datesWrapper {
+        height: 10%;
+    }
+    .namesWrapper {
+        height: 7rem;
+    }
+    
+    span {
+        font-size: 1.25rem;
     }
 
-    .namesWrapper {
-        height: 11vh;
+    .reserva-header {
+        background-image: url(../assets/reserva-fecha-green.png);
+        height: 5rem;
+    }
+
+    .bg-svg {
+        background-size: cover;
     }
   }
