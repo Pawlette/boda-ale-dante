@@ -60,7 +60,7 @@ main {
 
 .namesWrapper {
     background-color:rgba(217, 212, 178, .8);
-    height: 45%;
+    height: 50%;
     padding-top: .4rem;
 }
 
@@ -76,7 +76,7 @@ main {
 
 .image {
     height: 100%;
-    background-image: url(../assets/ale-dante-green_style_two.svg);
+    background-image: url(../assets/ale-dante-green_style_four.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -131,6 +131,10 @@ span {
 
     .datesWrapper {
         height: 10%;
+    }
+
+    .namesWrapper {
+        height: 41%;
     }
     
     span {
